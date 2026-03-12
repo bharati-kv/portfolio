@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Bharati Portfolio</title>
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Arial, Helvetica, sans-serif;
+scroll-behavior:smooth;
+}
+
+body{
+background:#0f172a;
+color:white;
+}
+
+nav{
+display:flex;
+justify-content:space-between;
+align-items:center;
+padding:20px 10%;
+background:#020617;
+position:sticky;
+top:0;
+z-index:100;
+}
+
+.logo{
+font-size:24px;
+font-weight:bold;
+color:#38bdf8;
+}
+
+nav ul{
+display:flex;
+list-style:none;
+}
+
+nav ul li{
+margin-left:20px;
+}
+
+nav ul li a{
+text-decoration:none;
+color:white;
+font-size:16px;
+transition:0.3s;
+}
+
+nav ul li a:hover{
+color:#38bdf8;
+}
+
+.hero{
+height:100vh;
+display:flex;
+align-items:center;
+justify-content:center;
+padding:0 10%;
+}
+
+.hero-container{
+display:flex;
+align-items:center;
+justify-content:space-between;
+width:100%;
+}
+
+.hero-text h1{
+font-size:45px;
+}
+
+.hero-text span{
+color:#38bdf8;
+}
+
+.hero-text p{
+margin:15px 0;
+font-size:20px;
+color:#cbd5f5;
+}
+
+.btn{
+display:inline-block;
+padding:12px 25px;
+background:#38bdf8;
+color:black;
+border-radius:5px;
+text-decoration:none;
+margin-top:10px;
+}
+
+.photo-box{
+width:380px;
+height:380px;
+border-radius:15px;
+border:4px solid #38bdf8;
+display:flex;
+align-items:center;
+justify-content:center;
+overflow:hidden;
+}
+
+.photo-box img{
+width:100%;
+height:100%;
+object-fit:cover;
+}
+
+section{
+padding:80px 10%;
+}
+
+h2{
+font-size:32px;
+margin-bottom:20px;
+color:#38bdf8;
+}
+
+#about p{
+max-width:600px;
+line-height:1.6;
+color:#cbd5f5;
+}
+
+.skill{
+max-width:600px;
+}
+
+.skill p{
+margin-top:15px;
+}
+
+.progress{
+background:#1e293b;
+height:10px;
+border-radius:20px;
+overflow:hidden;
+}
+
+.progress-bar{
+height:10px;
+}
+
+.html{width:90%;background:#38bdf8;}
+.css{width:89%;background:#22c55e;}
+.js{width:75%;background:#facc15;}
+.react{width:70%;background:#a855f7;}
+.node{width:65%;background:#ef4444;}
+
+.project-container{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:20px;
+}
+
+.card{
+background:#1e293b;
+padding:20px;
+border-radius:10px;
+transition:0.3s;
+}
+
+.card:hover{
+transform:translateY(-10px);
+}
+
+.card h3{
+margin-bottom:10px;
+}
+
+.card p{
+color:#cbd5f5;
+margin-bottom:10px;
+}
+
+.card button{
+padding:8px 15px;
+border:none;
+background:#38bdf8;
+border-radius:5px;
+cursor:pointer;
+}
+
+#contact p{
+margin-top:10px;
+color:#cbd5f5;
+}
+
+footer{
+text-align:center;
+padding:20px;
+background:#020617;
+margin-top:40px;
+}
+
+</style>
+
+</head>
+
+<body>
+
+<nav>
+
+<h2 class="logo">Bharati </h2>
+
+<ul>
+<li><a href="#home">Home</a></li>
+<li><a href="#about">About</a></li>
+<li><a href="#skills">Skills</a></li>
+<li><a href="#projects">Projects</a></li>
+<li><a href="#contact">Contact</a></li>
+</ul>
+
+</nav>
+
+
+<section id="home" class="hero">
+
+<div class="hero-container">
+
+<div class="hero-text">
+
+<h1>Hello I'm <span>Bharati K V</span></h1>
+
+<p>Full Stack Web Developer</p>
+
+<a href="#projects" class="btn">View My Work</a>
+
+</div>
+
+<div class="photo-box">
+
+<img src="gitphoto.png" alt="gitphoto">
+
+</div>
+
+</div>
+
+</section>
+
+
+<section id="about">
+
+<h2>About Me</h2>
+
+<p>
+I am a motivated Full Stack Web Developer with a strong foundation in HTML, CSS, JavaScript, React, and Node.js. I enjoy building responsive and scalable web applications that solve real world problems. I have experience developing projects such as an e-commerce platform, AI based safety monitoring system, and document search tools using modern development practices. I am passionate about learning new technologies, especially in artificial intelligence and cloud computing, and aim to build innovative digital solutions that improve user experience and productivity.
+</p>
+
+</section>
+
+
+<section id="skills">
+
+<h2>Skills</h2>
+
+<div class="skill">
+
+<p>HTML</p>
+<div class="progress"><div class="progress-bar html"></div></div>
+
+<p>CSS</p>
+<div class="progress"><div class="progress-bar css"></div></div>
+
+<p>JavaScript</p>
+<div class="progress"><div class="progress-bar js"></div></div>
+
+<p>React</p>
+<div class="progress"><div class="progress-bar react"></div></div>
+
+<p>Node.js</p>
+<div class="progress"><div class="progress-bar node"></div></div>
+
+</div>
+
+</section>
+
+
+<section id="projects">
+
+<h2>Projects</h2>
+
+<div class="project-container">
+
+<div class="card">
+<h3>Online Shopping Website</h3>
+<p>Ecommerce website with cart and checkout system.</p>
+<button>View Project</button>
+</div>
+
+<div class="card">
+<h3>AI Safety Monitoring</h3>
+<p>Detects helmet usage, fire, and human fall using AI.</p>
+<button>View Project</button>
+</div>
+
+<div class="card">
+<h3>Portfolio Website</h3>
+<p>Personal portfolio showcasing skills and projects.</p>
+<button>View Project</button>
+</div>
+
+</div>
+
+</section>
+
+
+<section id="contact">
+
+<h2>Contact Me</h2>
+
+<p>Email: bharatikv10@gmail.com</p>
+
+<p>GitHub: https://github.com/bharati-kv</p>
+
+<p>LinkedIn: https://www.linkedin.com/in/bharati-k-v</p>
+
+</section>
+
+
+<footer>
+
+<p>© 2026 Bharati K V</p>
+
+</footer>
+
+</body>
+
+</html>
