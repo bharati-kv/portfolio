@@ -1,0 +1,416 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<title>Bharati Portfolio</title>
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Arial;
+scroll-behavior:smooth;
+}
+
+body{
+background:#0f172a;
+color:white;
+}
+
+/* NAVIGATION */
+
+nav{
+display:flex;
+justify-content:space-between;
+align-items:center;
+padding:20px 60px;
+background:#020617;
+position:sticky;
+top:0;
+z-index:100;
+}
+
+.logo{
+font-size:24px;
+color:#38bdf8;
+font-weight:bold;
+}
+
+nav ul{
+display:flex;
+list-style:none;
+}
+
+nav ul li{
+margin-left:25px;
+}
+
+nav ul li a{
+color:white;
+text-decoration:none;
+font-size:18px;
+position:relative;
+}
+
+nav ul li a::after{
+content:"";
+width:0%;
+height:2px;
+background:#38bdf8;
+position:absolute;
+bottom:-5px;
+left:0;
+transition:0.4s;
+}
+
+nav ul li a:hover::after{
+width:100%;
+}
+
+/* HERO SECTION */
+
+.hero{
+height:100vh;
+display:flex;
+align-items:center;
+justify-content:center;
+background:linear-gradient(120deg,#1e3a8a,#2563eb);
+}
+
+.hero-container{
+display:flex;
+align-items:center;
+justify-content:space-between;
+width:80%;
+}
+
+.hero-text h1{
+font-size:45px;
+}
+
+.hero-text span{
+color:#facc15;
+}
+
+.hero-text p{
+margin-top:10px;
+font-size:22px;
+}
+
+/* typing animation */
+
+.typing{
+border-right:3px solid white;
+white-space:nowrap;
+overflow:hidden;
+width:0;
+animation:typing 4s steps(25,end) forwards;
+}
+
+@keyframes typing{
+from{width:0}
+to{width:260px}
+}
+
+/* PHOTO BOX */
+
+.photo-box{
+width:260px;
+height:260px;
+border-radius:20px;
+border:4px solid #38bdf8;
+overflow:hidden;
+box-shadow:0 0 20px #38bdf8;
+}
+
+.photo-box img{
+width:100%;
+height:100%;
+object-fit:cover;
+}
+
+/* BUTTON */
+
+.btn{
+display:inline-block;
+margin-top:20px;
+padding:12px 25px;
+background:#facc15;
+color:black;
+text-decoration:none;
+border-radius:6px;
+font-weight:bold;
+transition:0.3s;
+}
+
+.btn:hover{
+transform:scale(1.08);
+box-shadow:0 0 15px #facc15;
+}
+
+/* ICONS */
+
+.icons{
+margin-top:20px;
+}
+
+.icons i{
+font-size:28px;
+margin-right:12px;
+transition:0.3s;
+}
+
+.icons i:hover{
+color:#facc15;
+transform:translateY(-5px);
+}
+
+/* SECTION */
+
+section{
+padding:80px;
+text-align:center;
+}
+
+h2{
+font-size:36px;
+margin-bottom:30px;
+color:#38bdf8;
+}
+
+/* ABOUT */
+
+#about p{
+max-width:600px;
+margin:auto;
+line-height:1.7;
+opacity:0.9;
+}
+
+/* SKILLS */
+
+.progress{
+width:60%;
+margin:auto;
+background:#334155;
+height:10px;
+border-radius:20px;
+margin-bottom:20px;
+overflow:hidden;
+}
+
+.progress-bar{
+height:10px;
+border-radius:20px;
+animation:load 3s;
+}
+
+@keyframes load{
+0%{width:0}
+}
+
+.html{width:90%;background:#f97316;}
+.css{width:85%;background:#3b82f6;}
+.js{width:75%;background:#eab308;}
+.react{width:70%;background:#38bdf8;}
+.node{width:65%;background:#22c55e;}
+
+/* PROJECTS */
+
+.project-container{
+display:flex;
+justify-content:center;
+flex-wrap:wrap;
+gap:30px;
+}
+
+/* GLASS CARD */
+
+.card{
+background:rgba(255,255,255,0.08);
+backdrop-filter:blur(10px);
+padding:30px;
+border-radius:15px;
+width:260px;
+transition:0.4s;
+border:1px solid rgba(255,255,255,0.1);
+}
+
+.card:hover{
+transform:translateY(-12px);
+box-shadow:0 0 20px rgba(56,189,248,0.6);
+}
+
+.card h3{
+margin-bottom:10px;
+}
+
+.card button{
+margin-top:10px;
+padding:10px 15px;
+border:none;
+background:#facc15;
+cursor:pointer;
+border-radius:5px;
+}
+
+/* CONTACT */
+
+#contact p{
+margin-top:10px;
+opacity:0.9;
+}
+
+/* FOOTER */
+
+footer{
+text-align:center;
+padding:20px;
+background:#020617;
+}
+
+</style>
+
+</head>
+
+<body>
+
+<nav>
+
+<h2 class="logo">Bharati</h2>
+
+<ul>
+<li><a href="#home">Home</a></li>
+<li><a href="#about">About</a></li>
+<li><a href="#skills">Skills</a></li>
+<li><a href="#projects">Projects</a></li>
+<li><a href="#contact">Contact</a></li>
+</ul>
+
+</nav>
+
+
+<section id="home" class="hero">
+
+<div class="hero-container">
+
+<div class="hero-text">
+
+<h1>Hello I'm <span>Bharati K V</span></h1>
+
+<p class="typing">Full Stack Developer</p>
+
+<a href="#projects" class="btn">View My Work</a>
+
+<div class="icons">
+
+<i class="fab fa-html5"></i>
+<i class="fab fa-css3-alt"></i>
+<i class="fab fa-js"></i>
+<i class="fab fa-react"></i>
+<i class="fab fa-node"></i>
+<i class="fab fa-github"></i>
+
+</div>
+
+</div>
+
+<div class="photo-box">
+
+<img src="your-photo.jpg">
+
+</div>
+
+</div>
+
+</section>
+
+
+<section id="about">
+
+<h2>About Me</h2>
+
+<p>
+I am a passionate web developer who enjoys building modern responsive websites and solving real world problems using technology.
+</p>
+
+</section>
+
+
+<section id="skills">
+
+<h2>Skills</h2>
+
+<p>HTML</p>
+<div class="progress"><div class="progress-bar html"></div></div>
+
+<p>CSS</p>
+<div class="progress"><div class="progress-bar css"></div></div>
+
+<p>JavaScript</p>
+<div class="progress"><div class="progress-bar js"></div></div>
+
+<p>React</p>
+<div class="progress"><div class="progress-bar react"></div></div>
+
+<p>Node</p>
+<div class="progress"><div class="progress-bar node"></div></div>
+
+</section>
+
+
+<section id="projects">
+
+<h2>Projects</h2>
+
+<div class="project-container">
+
+<div class="card">
+<h3>Online Shopping Website</h3>
+<p>Ecommerce site with cart and checkout.</p>
+<button>View Project</button>
+</div>
+
+<div class="card">
+<h3>AI Safety Monitoring</h3>
+<p>Detects helmet, fire and fall using AI.</p>
+<button>View Project</button>
+</div>
+
+<div class="card">
+<h3>Portfolio Website</h3>
+<p>Personal developer portfolio site.</p>
+<button>View Project</button>
+</div>
+
+</div>
+
+</section>
+
+
+<section id="contact">
+
+<h2>Contact</h2>
+
+<p>Email: bharatikv10@gmail.com</p>
+
+<p>GitHub: github.com/bharati-kv</p>
+
+<p>LinkedIn: linkedin.com/in/bharati-k-v</p>
+
+</section>
+
+
+<footer>
+
+<p>© 2026 Bharati K V</p>
+
+</footer>
+
+</body>
+
+</html>
